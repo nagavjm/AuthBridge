@@ -13,6 +13,7 @@ public static class IdentityServerConfig
         {
             new IdentityResources.OpenId(),
             new IdentityResources.Profile(),
+            new IdentityResources.Email(),
         };
 
     public static IEnumerable<ApiScope> ApiScopes =>
@@ -101,7 +102,7 @@ public static class IdentityServerConfig
             PostLogoutRedirectUris = { $"{baseUrl}/signout-callback-oidc" },
             AllowedCorsOrigins = { baseUrl },
 
-            AllowedScopes = { "openid", "profile", "application_access" },
+            AllowedScopes = { "openid", "profile", "email", "application_access" },
             AllowAccessTokensViaBrowser = true,
 
             // Ensures the "app_access" claim(s) added by ApplicationProfileService are embedded
