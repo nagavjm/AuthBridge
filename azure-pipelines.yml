@@ -10,7 +10,7 @@ variables:
   buildConfiguration: 'Release'
   azureSubscription: 'AuthBridge-Dev-ServiceConnection'
   authBridgeAppName: 'authbridge-dev-ngn2026-1'
-  scimAppName: 'scim-provisioning-dev-ngn2026-1'
+  scimAppName: 'scim-provisioning-dev-ngn2026-2'
 
 stages:
   - stage: Build
